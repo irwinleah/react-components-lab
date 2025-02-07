@@ -42,9 +42,12 @@ const weatherForecasts = [
 const App = () => {
   return (
     <>
-    {weatherForecasts.map((weather, idx) => 
-      <WeatherForecast weather={weather} key={idx}/>
-    )}
+      <h1>Local Weather</h1>
+      <section>
+      {weatherForecasts.map((weather, idx) =>
+        <WeatherForecast weather={weather} key={idx} />
+      )}
+      </section>
 
     </>
   );
